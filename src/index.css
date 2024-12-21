@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer{ */
+
+  .text-selection ::selection {
+    @apply bg-orange-400 text-[white];
+  }
+
+
+  body{
+      @apply box-border p-0 m-0 font-[Sora] scroll-smooth ;
+    }
+  
+    .main-shadow {
+      @apply shadow-[0_-1_4px_rgba(0,0,0,0.15)];
+    }
+    html{
+      @apply h-full scroll-smooth
+    }
+  
+    .box-shadow {
+      @apply shadow-[inset_0_0_0_9px_rgba(255_255_255/_30%)];
+    }
+    .line {
+      @apply relative
+    }
+    .line:before{
+      @apply content-[""] block w-14 h-[1px] absolute left-0 top-2/4;
+      background: #000;
+    }
+  
+    .darkline{
+      @apply relative;
+    }
+  
+    .darkline:before{
+      @apply content-[""] block w-14 h-[1px] absolute left-0 top-2/4;
+      background: #fff;
+    } 
+    
+    .image {
+      @apply animate-[profile\_animate_8s_ease-in-out_infinite_1s];
+    }
+  
+    .Onshadow{
+      @apply shadow-[rgb(204,219,232)_3px_3px_6px_0px_inset,rgba(255,255,255,0.5)_-3px_-3px_6px_1px_inset];
+    }
+    
+  
+  
+    .cool {
+      background: linear-gradient(
+        90deg,
+        #44ff9a -0.55%,
+        #44b0ff 22.86%,
+        #8b44ff 48.36%,
+        #ff6644 73.33%,
+        #ebff70 99.34%
+      );
+      @apply absolute z-0 duration-1000 -inset-2 transition-all opacity-25 rounded-xl blur-lg filter group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200
+    }
+  
+    .dark{
+      @apply text-body-color bg-title-color-dark;
+    }
+  
+    .light{
+      @apply bg-body-color text-title-color;
+    }
+  
+    .gradient-btn{
+      @apply bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500
+    }
+  
+    .relative-parent:hover .absolute-element {
+      display: block;
+    }
+
+    @keyframes waving {
+      0% {
+        transform: translateY(0);
+      }
+      /* 25% {
+        transform: translateY(-5px);
+      } */
+      50% {
+        transform: translateY(10px);
+      }
+      /* 75% {
+        transform: translateY(5px);
+      } */
+      100% {
+        transform: translateY(0);
+      } 
+    }
+    
+    .rotate-infinite {
+      animation: infiniteRotation 4s linear infinite; /* Change the duration and timing function as per your preference */
+    }
+
+   @keyframes infiniteRotation {
+    from {
+      transform: rotate(-0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+   }
