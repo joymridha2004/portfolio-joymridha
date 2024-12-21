@@ -9,8 +9,7 @@ import { BsArrowDownShort } from "react-icons/bs";
 import oggy from '../../../../assets/Happy Dance Sticker by Oggy and the Cockroaches for iOS & Android _ GIPHY.gif'
 import hand from '../../../../assets/hand.svg'
 import { DataContext } from '../../../../App';
-import  MobileCard  from '../../../MobileCard'
-import  ButtonView  from '../../../ButtonView'
+import MobileCard from '../../../MobileCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 function Home() {
@@ -62,9 +61,9 @@ function Home() {
             {/* image  */}
             <div data-aos="fade-down" className='flex-1 relative'>
               {/* <img src={oggy} className=' mx-auto ml-5 image object-cover rounded-full left-0 h-[250px] w-[250px] md:h-[300px] md:w-[300px]' alt="" /> */}
-              <MobileCard mobile= {oggy}/>
               {/* welcome message */}
               {/* <img src={welcome2} className='absolute left-1/4 animate-waving lg:left-1/3 z-20 top-0' alt="" /> */}
+              <MobileCard mobile={oggy} />
             </div>
           </div>
         </div>
