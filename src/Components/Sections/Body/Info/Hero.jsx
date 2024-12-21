@@ -9,7 +9,7 @@ import { BsArrowDownShort } from "react-icons/bs";
 import oggy from '../../../../assets/Happy Dance Sticker by Oggy and the Cockroaches for iOS & Android _ GIPHY.gif'
 import hand from '../../../../assets/hand.svg'
 import { DataContext } from '../../../../App';
-import MobileCard from '../../../MobileCard'
+import MobileCard from './MobileCard'
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 function Home() {

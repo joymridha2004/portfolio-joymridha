@@ -15,6 +15,11 @@ function About() {
         AOS.init({ duration: 1000 });
       }, [])
 
+      useEffect(() => {
+        // Refresh AOS animations when mode changes
+        AOS.refresh();
+    }, [color]);
+    
   return (
     <>
         <section id='about' className={`container ${color === 'light' ? 'bg-body-color' : 'bg-black'} px-3 md:px-10 mt-20 md:pt-32`}>
