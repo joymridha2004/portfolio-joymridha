@@ -8,7 +8,7 @@ function PortfolioItems({ project }) {
 
   return (
     <div
-      className={`relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 w-[400px] h-[400px] flex flex-col ${color === 'light' ? 'bg-white' : 'bg-gray-800'}`}
+      className={`relative overflow-hidden rounded-xl shadow-lg transition-all duration-500 sm:w-[400px] w-[280px] h-[400px] flex flex-col ${color === 'light' ? 'bg-white' : 'bg-gray-800'}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       data-aos={project.dataaos}
