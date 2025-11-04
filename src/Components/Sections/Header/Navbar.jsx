@@ -35,7 +35,10 @@ function Navbar() {
 
   const navmenu = (icon, name, link) => (
     <ScrollLink
-      spy
+      spy={true}
+      smooth={true}
+      duration={500} // 500ms scroll duration for all sections
+      offset={-70}  // adjust if navbar overlaps sections
       onClick={() => settoggle(false)}
       to={link}
       onSetActive={() => activesection(link)}
