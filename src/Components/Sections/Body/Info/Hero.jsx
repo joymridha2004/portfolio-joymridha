@@ -37,7 +37,7 @@ function Home() {
             <div className='flex flex-1 flex-col items-start gap-4 lg:pr-10'>
               <div data-aos="fade-left" className='flex items-center relative gap-1 md:gap-4 mb-2'>
                 <div className='cool' ></div>
-                <h1 className='text-7xl'>Joy Mridha</h1>
+                <h1 className='text-7xl'>Joy Mridha Dev</h1>
                 <img src={hand} alt="" />
               </div>
               <h1 className={`${color === 'light' ? 'line' : 'darkline'} pl-16`}>
