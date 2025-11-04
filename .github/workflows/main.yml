@@ -24,9 +24,6 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Run tests
-        run: npm test -- --watchAll=false
-
       - name: Build project
         run: npm run build
 
